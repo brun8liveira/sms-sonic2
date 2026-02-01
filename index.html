@@ -4,22 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Sonic</title>
 
-<script>
-  // CONFIGURAÇÃO (corrigida para a sua estrutura)
-  EJS_DEBUG_XX = true;
-  EJS_threads = false;
+  <script>
+    EJS_player = "#game";
+    EJS_core = "smsplus";                           // Sega Master System
+    EJS_gameUrl = "roms/sonic.sms";         // ajuste o nome / extensão da sua ROM
+    EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
+    EJS_startOnLoaded = true;
+    EJS_fullscreenOnLoaded = false;
+  </script>
 
-  EJS_player      = "#game";
-  EJS_core        = "smsplus";                 // ✔ CORE correto no seu package.json
-  EJS_gameUrl     = "roms/sonic.sms";             // ✔ ROM correta
-  EJS_pathtodata  = "data/";   // ✔ caminho correto
-
-  // Iniciar sozinho ao carregar
-  EJS_startOnLoaded = true;
-  EJS_fullscreenOnLoaded = false; // fullscreen apenas após toque
-</script>
-
-<script src="data/loader.js"></script>
+  <script src="https://cdn.emulatorjs.org/latest/data/loader.js"></script>
 
 <style>
 html, body {
